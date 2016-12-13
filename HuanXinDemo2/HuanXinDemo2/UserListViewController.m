@@ -26,14 +26,51 @@
     //监听加好友请求
     [[EMClient sharedClient].contactManager addDelegate:self delegateQueue:nil];
     
+    
+    
 }
 
 #pragma mark - EMContactManagerDelegate
+#pragma mark -- 收到好友请求回调
 - (void)friendRequestDidReceiveFromUser:(NSString *)aUsername message:(NSString *)aMessage{
 
     NSLog(@"有人想加你为好友");
     NSLog(@"%@,%@",aUsername,aMessage);
+    
+    UIAlertController * alsertC = [UIAlertController alertControllerWithTitle:@"有人想加你为好友" message:aMessage preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction * sureAction = [UIAlertAction actionWithTitle:@"同意" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+#pragma mark --通过好友添加
+        [[EMClient sharedClient].contactManager acceptInvitationForUsername:aUsername];
+    }];
+    
+    UIAlertAction * cancelAction = [UIAlertAction actionWithTitle:@"不同意" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+#pragma mark -- 拒绝加好友申请
+        [[EMClient sharedClient].contactManager declineInvitationForUsername:aUsername];
+        
+    }];
+    
+    [alsertC addAction:sureAction];
+    [alsertC addAction:cancelAction];
+    [self presentViewController:alsertC animated:YES completion:nil];
 }
+
+#pragma mark -- 好友申请处理结果  
+//好友申请被通过
+- (void)friendRequestDidApproveByUser:(NSString *)aUsername{
+    NSLog(@"%@通过了你的好友请求",aUsername);
+    [self.tableView reloadData];
+}
+
+//好友申请被拒绝
+- (void)friendRequestDidDeclineByUser:(NSString *)aUsername{
+
+    NSLog(@"%@拒绝了你的好友请求",aUsername);
+}
+
+
+
+
 
 
 
@@ -57,6 +94,8 @@
             
                 [self addFriend:userName];
             }
+            
+            [self.addConnectionView removeFromSuperview];
         };
     }
     
