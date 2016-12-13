@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ListMenuView">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="123"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="At7-sk-Zf1">
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="62"/>
+                    <color key="backgroundColor" red="1" green="0.94311610950000002" blue="0.27400974030000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="联系人">
+                        <color key="titleColor" red="0.1960784314" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addFriend:" destination="iN0-l3-epB" eventType="touchUpInside" id="qr5-rn-BRY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZs-XW-UYK">
+                    <rect key="frame" x="0.0" y="62" width="107" height="61"/>
+                    <color key="backgroundColor" red="1" green="0.94311610950000002" blue="0.27400974030000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="群组">
+                        <color key="titleColor" red="0.1960784314" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addGrounp:" destination="iN0-l3-epB" eventType="touchUpInside" id="TyI-8P-pxE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pZs-XW-UYK" secondAttribute="bottom" id="6f6-41-egh"/>
+                <constraint firstItem="At7-sk-Zf1" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="8F9-VL-XR3"/>
+                <constraint firstItem="At7-sk-Zf1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Cyt-TM-x9M"/>
+                <constraint firstItem="At7-sk-Zf1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="D2S-o4-duS"/>
+                <constraint firstAttribute="trailing" secondItem="pZs-XW-UYK" secondAttribute="trailing" id="HlD-zA-j0a"/>
+                <constraint firstAttribute="trailing" secondItem="At7-sk-Zf1" secondAttribute="trailing" id="OTb-BA-iu9"/>
+                <constraint firstItem="pZs-XW-UYK" firstAttribute="top" secondItem="At7-sk-Zf1" secondAttribute="bottom" id="dLj-Zv-E1a"/>
+                <constraint firstItem="pZs-XW-UYK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pqg-cB-hAb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="179.5" y="-134.5"/>
+        </view>
+    </objects>
+</document>

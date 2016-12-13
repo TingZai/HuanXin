@@ -9,7 +9,9 @@
 
 #import "UserInfoViewController.h"
 #import "EMSDK.h"
+#import "EaseUI.h"
 #import "ConversationInfoViewController.h"
+
 
 @interface UserInfoViewController ()
 
@@ -37,13 +39,28 @@
 
 //添加会话
 - (void)addAction{
+    
+    EMConversation * conversation;
+    NSString * name;
+    
+    if ([self.userName isEqualToString:@"yuting"]) {
+        
+        conversation = [[EMClient sharedClient].chatManager getConversation:@"xiaogou" type:EMConversationTypeChat createIfNotExist:YES];
+        name = @"xiaogou";
+    }else{
+    
+        conversation = [[EMClient sharedClient].chatManager getConversation:@"yuting" type:EMConversationTypeChat createIfNotExist:YES];
+        name = @"yuting";
+    }
 
-   EMConversation * conversation = [[EMClient sharedClient].chatManager getConversation:@"xiaogou" type:EMConversationTypeChat createIfNotExist:YES];
+    
     
     NSLog(@"%@",conversation);
-    ConversationInfoViewController * conver = [[ConversationInfoViewController alloc] init];
-    conver.conversaction = conversation;
-    [self.navigationController pushViewController:conver animated:YES];
+//    ConversationInfoViewController * conver = [[ConversationInfoViewController alloc] init];
+//    conver.conversaction = conversation;
+//    [self.navigationController pushViewController:conver animated:YES];
+    EaseMessageViewController * messageC = [[EaseMessageViewController alloc] initWithConversationChatter:name conversationType:EMConversationTypeChat];
+    [self.navigationController pushViewController:messageC animated:YES];
 }
 
 

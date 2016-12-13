@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConversationInfoViewController">
             <connections>
                 <outlet property="messageField" destination="ppj-5K-Wyc" id="oK1-Gh-hjh"/>
+                <outlet property="tableView" destination="Jbf-ZT-xEw" id="C7F-0Y-sxe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -44,10 +45,22 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jbf-ZT-xEw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="621"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xHL-sJ-t7W"/>
+                        <outlet property="delegate" destination="-1" id="ezA-SG-FxT"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="Jbf-ZT-xEw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4aw-Ki-zeQ"/>
+                <constraint firstItem="ppj-5K-Wyc" firstAttribute="top" secondItem="Jbf-ZT-xEw" secondAttribute="bottom" id="58W-eA-DxR"/>
+                <constraint firstItem="Jbf-ZT-xEw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8XU-mX-j7a"/>
                 <constraint firstAttribute="bottom" secondItem="ppj-5K-Wyc" secondAttribute="bottom" constant="8" id="BkQ-3c-6wf"/>
+                <constraint firstAttribute="trailing" secondItem="Jbf-ZT-xEw" secondAttribute="trailing" id="G3X-bW-uPH"/>
                 <constraint firstAttribute="bottom" secondItem="yb9-Cp-0st" secondAttribute="bottom" constant="9" id="Tgj-2d-r6I"/>
                 <constraint firstItem="yb9-Cp-0st" firstAttribute="leading" secondItem="ppj-5K-Wyc" secondAttribute="trailing" constant="18" id="ej8-Sg-Mtj"/>
                 <constraint firstAttribute="trailing" secondItem="yb9-Cp-0st" secondAttribute="trailing" constant="10" id="pCu-2T-aaB"/>

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "EMSDK.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +26,13 @@
 //    options.apnsCertName = @""
     
     [[EMClient sharedClient] initializeSDKWithOptions:options];
+    
+    //2.显示登录页面
+    UIStoryboard * story = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+    
+    ViewController * login = story.instantiateInitialViewController;
+    self.window.rootViewController = login;
+    
     
     return YES;
 }

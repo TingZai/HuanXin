@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "EMSDK.h"
-#import "UserInfoViewController.h"
+#import "TabBarViewController.h"
+
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *userName;
@@ -30,14 +31,11 @@
         
         [[EMClient sharedClient] loginWithUsername:_userName.text password:_passWord.text completion:^(NSString *aUsername, EMError *aError) {
             
-            NSLog(@"%@",aUsername);
-            NSLog(@"%@",aError);
-            NSLog(@"%@",[NSThread currentThread]);
             if (aUsername) {
                 
-                UserInfoViewController * userInfo = [[UserInfoViewController alloc] init];
-                userInfo.userName = aUsername;
-                [self.navigationController pushViewController:userInfo animated:YES];
+                UIStoryboard * main = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                TabBarViewController * tabBar = main.instantiateInitialViewController;
+                [UIApplication sharedApplication].keyWindow.rootViewController = tabBar;
             }
             
         }];
