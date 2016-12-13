@@ -155,6 +155,7 @@
 		0EEFD7541DFFCB9E002559A4 /* ListMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EEFD7531DFFCB9E002559A4 /* ListMenuView.xib */; };
 		0EEFD7571DFFD112002559A4 /* AddConnectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD7561DFFD112002559A4 /* AddConnectionView.m */; };
 		0EEFD7591DFFD123002559A4 /* AddConnectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EEFD7581DFFD123002559A4 /* AddConnectionView.xib */; };
+		0EEFD75C1DFFF1E9002559A4 /* SingleMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD75B1DFFF1E9002559A4 /* SingleMessageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -486,6 +487,8 @@
 		0EEFD7551DFFD112002559A4 /* AddConnectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddConnectionView.h; sourceTree = "<group>"; };
 		0EEFD7561DFFD112002559A4 /* AddConnectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddConnectionView.m; sourceTree = "<group>"; };
 		0EEFD7581DFFD123002559A4 /* AddConnectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddConnectionView.xib; sourceTree = "<group>"; };
+		0EEFD75A1DFFF1E9002559A4 /* SingleMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleMessageViewController.h; sourceTree = "<group>"; };
+		0EEFD75B1DFFF1E9002559A4 /* SingleMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleMessageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -646,6 +649,8 @@
 				0EEFD5911DFEF4DD002559A4 /* UserInfoViewController.m */,
 				0EEFD7431DFFB9C6002559A4 /* ConversationListViewController.h */,
 				0EEFD7441DFFB9C6002559A4 /* ConversationListViewController.m */,
+				0EEFD75A1DFFF1E9002559A4 /* SingleMessageViewController.h */,
+				0EEFD75B1DFFF1E9002559A4 /* SingleMessageViewController.m */,
 			);
 			name = "消息列表界面";
 			sourceTree = "<group>";
@@ -1421,6 +1426,7 @@
 				0EEFD6F31DFFB343002559A4 /* MWTapDetectingImageView.m in Sources */,
 				0EEFD6E71DFFB343002559A4 /* MJRefreshNormalHeader.m in Sources */,
 				0EEFD73E1DFFB343002559A4 /* EaseFacialView.m in Sources */,
+				0EEFD75C1DFFF1E9002559A4 /* SingleMessageViewController.m in Sources */,
 				0EEFD7291DFFB343002559A4 /* EaseRefreshTableViewController.m in Sources */,
 				0EEFD6FE1DFFB343002559A4 /* MKAnnotationView+EMWebCache.m in Sources */,
 				0EEFD72D1DFFB343002559A4 /* EaseBaseMessageCell.m in Sources */,
@@ -1602,6 +1608,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EaseUI/EaseUI-Prefix.pch";
 				INFOPLIST_FILE = HuanXinDemo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1622,6 +1629,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/EaseUI/EaseUI-Prefix.pch";
 				INFOPLIST_FILE = HuanXinDemo2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

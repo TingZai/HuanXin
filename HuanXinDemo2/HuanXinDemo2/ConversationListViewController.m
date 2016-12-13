@@ -8,7 +8,7 @@
 
 #import "ConversationListViewController.h"
 
-@interface ConversationListViewController ()<EaseConversationListViewControllerDataSource,EMChatManagerDelegate>
+@interface ConversationListViewController ()<EaseConversationListViewControllerDataSource,EMChatManagerDelegate,EaseConversationListViewControllerDelegate>
 
 @end
 
@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.dataSource = self;
+    self.delegate = self;
     self.title = @"消息";
     
     //注册消息回调
@@ -33,12 +34,6 @@
     [self refreshAndSortView];
 }
 
-- (void)messagesDidRead:(NSArray *)aMessages{
-
-    NSLog(@"消息已读");
-}
-
-
 #pragma mark - 自定义时间样式
 - (NSString *)conversationListViewController:(EaseConversationListViewController *)conversationListViewController
        latestMessageTimeForConversationModel:(id<IConversationModel>)conversationModel{
@@ -54,5 +49,8 @@
     
     return lastMessageTime;
 }
+
+
+
 
 @end

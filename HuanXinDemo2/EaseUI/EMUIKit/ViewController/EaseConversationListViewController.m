@@ -18,6 +18,7 @@
 #import "EaseMessageViewController.h"
 #import "NSDate+Category.h"
 #import "EaseLocalDefine.h"
+#import "SingleMessageViewController.h"
 
 @interface EaseConversationListViewController ()
 
@@ -108,12 +109,20 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    
+    //隐藏未读信息提示
+    EaseConversationCell * cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.avatarView.showBadge = NO;
+    
+    
     if (_delegate && [_delegate respondsToSelector:@selector(conversationListViewController:didSelectConversationModel:)]) {
         EaseConversationModel *model = [self.dataArray objectAtIndex:indexPath.row];
         [_delegate conversationListViewController:self didSelectConversationModel:model];
     } else {
+        
+        
         EaseConversationModel *model = [self.dataArray objectAtIndex:indexPath.row];
-        EaseMessageViewController *viewController = [[EaseMessageViewController alloc] initWithConversationChatter:model.conversation.conversationId conversationType:model.conversation.type];
+        SingleMessageViewController *viewController = [[SingleMessageViewController alloc] initWithConversationChatter:model.conversation.conversationId conversationType:model.conversation.type];
         viewController.title = model.title;
         [self.navigationController pushViewController:viewController animated:YES];
     }
