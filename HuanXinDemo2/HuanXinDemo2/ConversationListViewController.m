@@ -8,7 +8,7 @@
 
 #import "ConversationListViewController.h"
 
-@interface ConversationListViewController ()<EaseConversationListViewControllerDataSource>
+@interface ConversationListViewController ()<EaseConversationListViewControllerDataSource,EMChatManagerDelegate>
 
 @end
 
@@ -18,6 +18,24 @@
     [super viewDidLoad];
     self.dataSource = self;
     self.title = @"消息";
+    
+    //注册消息回调
+    [[EMClient sharedClient].chatManager addDelegate:self delegateQueue:nil];
+    
+//    [self showRefreshHeader];
+//    [self showRefreshFooter];
+    
+}
+
+#pragma mark - 消息回调
+- (void)messagesDidReceive:(NSArray *)aMessages{
+    
+    [self refreshAndSortView];
+}
+
+- (void)messagesDidRead:(NSArray *)aMessages{
+
+    NSLog(@"消息已读");
 }
 
 

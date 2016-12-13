@@ -26,7 +26,8 @@
     //监听加好友请求
     [[EMClient sharedClient].contactManager addDelegate:self delegateQueue:nil];
     
-    
+    [self showRefreshFooter];
+    [self showRefreshHeader];
     
 }
 
@@ -59,7 +60,7 @@
 //好友申请被通过
 - (void)friendRequestDidApproveByUser:(NSString *)aUsername{
     NSLog(@"%@通过了你的好友请求",aUsername);
-    [self.tableView reloadData];
+    
 }
 
 //好友申请被拒绝
