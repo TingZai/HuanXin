@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EEFD3A51DFEEEFD002559A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD3A41DFEEEFD002559A4 /* main.m */; };
+		0EEFD3A81DFEEEFD002559A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD3A71DFEEEFD002559A4 /* AppDelegate.m */; };
+		0EEFD3AB1DFEEEFD002559A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD3AA1DFEEEFD002559A4 /* ViewController.m */; };
+		0EEFD3AE1DFEEEFD002559A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEFD3AC1DFEEEFD002559A4 /* Main.storyboard */; };
+		0EEFD3B01DFEEEFD002559A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EEFD3AF1DFEEEFD002559A4 /* Assets.xcassets */; };
+		0EEFD3B31DFEEEFD002559A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEFD3B11DFEEEFD002559A4 /* LaunchScreen.storyboard */; };
+		0EEFD3DE1DFEEF56002559A4 /* libHyphenateSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEFD3DD1DFEEF56002559A4 /* libHyphenateSDK.a */; };
+		0EEFD3E11DFEEFAA002559A4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEFD3E01DFEEFAA002559A4 /* CoreMedia.framework */; };
+		0EEFD3E31DFEEFB7002559A4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEFD3E21DFEEFB7002559A4 /* AudioToolbox.framework */; };
+		0EEFD3E51DFEEFC0002559A4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEFD3E41DFEEFC0002559A4 /* AVFoundation.framework */; };
+		0EEFD3E71DFEEFCE002559A4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEFD3E61DFEEFCE002559A4 /* MobileCoreServices.framework */; };
+		0EEFD3E91DFEEFDC002559A4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEFD3E81DFEEFDC002559A4 /* ImageIO.framework */; };
+		0EEFD3EB1DFEEFF0002559A4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEFD3EA1DFEEFF0002559A4 /* libz.tbd */; };
+		0EEFD3ED1DFEEFFE002559A4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEFD3EC1DFEEFFE002559A4 /* libc++.tbd */; };
+		0EEFD3EF1DFEF00F002559A4 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEFD3EE1DFEF00F002559A4 /* libstdc++.6.0.9.tbd */; };
+		0EEFD3F11DFEF021002559A4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEFD3F01DFEF021002559A4 /* libsqlite3.tbd */; };
+		0EEFD5921DFEF4DD002559A4 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD5911DFEF4DD002559A4 /* UserInfoViewController.m */; };
+		0EEFD5991DFEFD7B002559A4 /* ConversationInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD5971DFEFD7B002559A4 /* ConversationInfoViewController.m */; };
+		0EEFD59A1DFEFD7B002559A4 /* ConversationInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EEFD5981DFEFD7B002559A4 /* ConversationInfoViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EEFD3A01DFEEEFD002559A4 /* HuanXinDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuanXinDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EEFD3A41DFEEEFD002559A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0EEFD3A61DFEEEFD002559A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0EEFD3A71DFEEEFD002559A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0EEFD3A91DFEEEFD002559A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0EEFD3AA1DFEEEFD002559A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0EEFD3AD1DFEEEFD002559A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0EEFD3AF1DFEEEFD002559A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0EEFD3B21DFEEEFD002559A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0EEFD3B41DFEEEFD002559A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EEFD3BC1DFEEF56002559A4 /* EMChatManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatManagerDelegate.h; sourceTree = "<group>"; };
+		0EEFD3BD1DFEEF56002559A4 /* EMChatroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatroom.h; sourceTree = "<group>"; };
+		0EEFD3BE1DFEEF56002559A4 /* EMChatroomManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMChatroomManagerDelegate.h; sourceTree = "<group>"; };
+		0EEFD3BF1DFEEF56002559A4 /* EMClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClient.h; sourceTree = "<group>"; };
+		0EEFD3C01DFEEF56002559A4 /* EMClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMClientDelegate.h; sourceTree = "<group>"; };
+		0EEFD3C11DFEEF56002559A4 /* EMCmdMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCmdMessageBody.h; sourceTree = "<group>"; };
+		0EEFD3C21DFEEF56002559A4 /* EMCommonDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCommonDefs.h; sourceTree = "<group>"; };
+		0EEFD3C31DFEEF56002559A4 /* EMContactManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMContactManagerDelegate.h; sourceTree = "<group>"; };
+		0EEFD3C41DFEEF56002559A4 /* EMConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMConversation.h; sourceTree = "<group>"; };
+		0EEFD3C51DFEEF56002559A4 /* EMCursorResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCursorResult.h; sourceTree = "<group>"; };
+		0EEFD3C61DFEEF56002559A4 /* EMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMError.h; sourceTree = "<group>"; };
+		0EEFD3C71DFEEF56002559A4 /* EMErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMErrorCode.h; sourceTree = "<group>"; };
+		0EEFD3C81DFEEF56002559A4 /* EMFileMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMFileMessageBody.h; sourceTree = "<group>"; };
+		0EEFD3C91DFEEF56002559A4 /* EMGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroup.h; sourceTree = "<group>"; };
+		0EEFD3CA1DFEEF56002559A4 /* EMGroupManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroupManagerDelegate.h; sourceTree = "<group>"; };
+		0EEFD3CB1DFEEF56002559A4 /* EMGroupOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMGroupOptions.h; sourceTree = "<group>"; };
+		0EEFD3CC1DFEEF56002559A4 /* EMImageMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMImageMessageBody.h; sourceTree = "<group>"; };
+		0EEFD3CD1DFEEF56002559A4 /* EMLocationMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLocationMessageBody.h; sourceTree = "<group>"; };
+		0EEFD3CE1DFEEF56002559A4 /* EMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessage.h; sourceTree = "<group>"; };
+		0EEFD3CF1DFEEF56002559A4 /* EMMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMessageBody.h; sourceTree = "<group>"; };
+		0EEFD3D01DFEEF56002559A4 /* EMOptions+PrivateDeploy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMOptions+PrivateDeploy.h"; sourceTree = "<group>"; };
+		0EEFD3D11DFEEF56002559A4 /* EMOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMOptions.h; sourceTree = "<group>"; };
+		0EEFD3D21DFEEF56002559A4 /* EMPageResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPageResult.h; sourceTree = "<group>"; };
+		0EEFD3D31DFEEF56002559A4 /* EMPushOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPushOptions.h; sourceTree = "<group>"; };
+		0EEFD3D41DFEEF56002559A4 /* EMSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMSDK.h; sourceTree = "<group>"; };
+		0EEFD3D51DFEEF56002559A4 /* EMTextMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMTextMessageBody.h; sourceTree = "<group>"; };
+		0EEFD3D61DFEEF56002559A4 /* EMVideoMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVideoMessageBody.h; sourceTree = "<group>"; };
+		0EEFD3D71DFEEF56002559A4 /* EMVoiceMessageBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMVoiceMessageBody.h; sourceTree = "<group>"; };
+		0EEFD3D81DFEEF56002559A4 /* IEMChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMChatManager.h; sourceTree = "<group>"; };
+		0EEFD3D91DFEEF56002559A4 /* IEMChatroomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMChatroomManager.h; sourceTree = "<group>"; };
+		0EEFD3DA1DFEEF56002559A4 /* IEMContactManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMContactManager.h; sourceTree = "<group>"; };
+		0EEFD3DB1DFEEF56002559A4 /* IEMGroupManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IEMGroupManager.h; sourceTree = "<group>"; };
+		0EEFD3DD1DFEEF56002559A4 /* libHyphenateSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libHyphenateSDK.a; sourceTree = "<group>"; };
+		0EEFD3E01DFEEFAA002559A4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0EEFD3E21DFEEFB7002559A4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0EEFD3E41DFEEFC0002559A4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0EEFD3E61DFEEFCE002559A4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		0EEFD3E81DFEEFDC002559A4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		0EEFD3EA1DFEEFF0002559A4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0EEFD3EC1DFEEFFE002559A4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0EEFD3EE1DFEF00F002559A4 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		0EEFD3F01DFEF021002559A4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0EEFD5901DFEF4DD002559A4 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		0EEFD5911DFEF4DD002559A4 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		0EEFD5961DFEFD7B002559A4 /* ConversationInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationInfoViewController.h; sourceTree = "<group>"; };
+		0EEFD5971DFEFD7B002559A4 /* ConversationInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationInfoViewController.m; sourceTree = "<group>"; };
+		0EEFD5981DFEFD7B002559A4 /* ConversationInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConversationInfoViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EEFD39D1DFEEEFD002559A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EEFD3F11DFEF021002559A4 /* libsqlite3.tbd in Frameworks */,
+				0EEFD3EF1DFEF00F002559A4 /* libstdc++.6.0.9.tbd in Frameworks */,
+				0EEFD3ED1DFEEFFE002559A4 /* libc++.tbd in Frameworks */,
+				0EEFD3EB1DFEEFF0002559A4 /* libz.tbd in Frameworks */,
+				0EEFD3E91DFEEFDC002559A4 /* ImageIO.framework in Frameworks */,
+				0EEFD3E71DFEEFCE002559A4 /* MobileCoreServices.framework in Frameworks */,
+				0EEFD3E51DFEEFC0002559A4 /* AVFoundation.framework in Frameworks */,
+				0EEFD3E31DFEEFB7002559A4 /* AudioToolbox.framework in Frameworks */,
+				0EEFD3E11DFEEFAA002559A4 /* CoreMedia.framework in Frameworks */,
+				0EEFD3DE1DFEEF56002559A4 /* libHyphenateSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0EEFD3971DFEEEFD002559A4 = {
+			isa = PBXGroup;
+			children = (
+				0EEFD3BA1DFEEF56002559A4 /* HyphenateSDK */,
+				0EEFD3A21DFEEEFD002559A4 /* HuanXinDemo2 */,
+				0EEFD3A11DFEEEFD002559A4 /* Products */,
+				0EEFD3DF1DFEEFAA002559A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0EEFD3A11DFEEEFD002559A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0EEFD3A01DFEEEFD002559A4 /* HuanXinDemo2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0EEFD3A21DFEEEFD002559A4 /* HuanXinDemo2 */ = {
+			isa = PBXGroup;
+			children = (
+				0EEFD3A61DFEEEFD002559A4 /* AppDelegate.h */,
+				0EEFD3A71DFEEEFD002559A4 /* AppDelegate.m */,
+				0EEFD3A91DFEEEFD002559A4 /* ViewController.h */,
+				0EEFD3AA1DFEEEFD002559A4 /* ViewController.m */,
+				0EEFD5901DFEF4DD002559A4 /* UserInfoViewController.h */,
+				0EEFD5911DFEF4DD002559A4 /* UserInfoViewController.m */,
+				0EEFD5961DFEFD7B002559A4 /* ConversationInfoViewController.h */,
+				0EEFD5971DFEFD7B002559A4 /* ConversationInfoViewController.m */,
+				0EEFD5981DFEFD7B002559A4 /* ConversationInfoViewController.xib */,
+				0EEFD3AC1DFEEEFD002559A4 /* Main.storyboard */,
+				0EEFD3AF1DFEEEFD002559A4 /* Assets.xcassets */,
+				0EEFD3B11DFEEEFD002559A4 /* LaunchScreen.storyboard */,
+				0EEFD3B41DFEEEFD002559A4 /* Info.plist */,
+				0EEFD3A31DFEEEFD002559A4 /* Supporting Files */,
+			);
+			path = HuanXinDemo2;
+			sourceTree = "<group>";
+		};
+		0EEFD3A31DFEEEFD002559A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0EEFD3A41DFEEEFD002559A4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EEFD3BA1DFEEF56002559A4 /* HyphenateSDK */ = {
+			isa = PBXGroup;
+			children = (
+				0EEFD3BB1DFEEF56002559A4 /* include */,
+				0EEFD3DC1DFEEF56002559A4 /* lib */,
+			);
+			path = HyphenateSDK;
+			sourceTree = "<group>";
+		};
+		0EEFD3BB1DFEEF56002559A4 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0EEFD3BC1DFEEF56002559A4 /* EMChatManagerDelegate.h */,
+				0EEFD3BD1DFEEF56002559A4 /* EMChatroom.h */,
+				0EEFD3BE1DFEEF56002559A4 /* EMChatroomManagerDelegate.h */,
+				0EEFD3BF1DFEEF56002559A4 /* EMClient.h */,
+				0EEFD3C01DFEEF56002559A4 /* EMClientDelegate.h */,
+				0EEFD3C11DFEEF56002559A4 /* EMCmdMessageBody.h */,
+				0EEFD3C21DFEEF56002559A4 /* EMCommonDefs.h */,
+				0EEFD3C31DFEEF56002559A4 /* EMContactManagerDelegate.h */,
+				0EEFD3C41DFEEF56002559A4 /* EMConversation.h */,
+				0EEFD3C51DFEEF56002559A4 /* EMCursorResult.h */,
+				0EEFD3C61DFEEF56002559A4 /* EMError.h */,
+				0EEFD3C71DFEEF56002559A4 /* EMErrorCode.h */,
+				0EEFD3C81DFEEF56002559A4 /* EMFileMessageBody.h */,
+				0EEFD3C91DFEEF56002559A4 /* EMGroup.h */,
+				0EEFD3CA1DFEEF56002559A4 /* EMGroupManagerDelegate.h */,
+				0EEFD3CB1DFEEF56002559A4 /* EMGroupOptions.h */,
+				0EEFD3CC1DFEEF56002559A4 /* EMImageMessageBody.h */,
+				0EEFD3CD1DFEEF56002559A4 /* EMLocationMessageBody.h */,
+				0EEFD3CE1DFEEF56002559A4 /* EMMessage.h */,
+				0EEFD3CF1DFEEF56002559A4 /* EMMessageBody.h */,
+				0EEFD3D01DFEEF56002559A4 /* EMOptions+PrivateDeploy.h */,
+				0EEFD3D11DFEEF56002559A4 /* EMOptions.h */,
+				0EEFD3D21DFEEF56002559A4 /* EMPageResult.h */,
+				0EEFD3D31DFEEF56002559A4 /* EMPushOptions.h */,
+				0EEFD3D41DFEEF56002559A4 /* EMSDK.h */,
+				0EEFD3D51DFEEF56002559A4 /* EMTextMessageBody.h */,
+				0EEFD3D61DFEEF56002559A4 /* EMVideoMessageBody.h */,
+				0EEFD3D71DFEEF56002559A4 /* EMVoiceMessageBody.h */,
+				0EEFD3D81DFEEF56002559A4 /* IEMChatManager.h */,
+				0EEFD3D91DFEEF56002559A4 /* IEMChatroomManager.h */,
+				0EEFD3DA1DFEEF56002559A4 /* IEMContactManager.h */,
+				0EEFD3DB1DFEEF56002559A4 /* IEMGroupManager.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0EEFD3DC1DFEEF56002559A4 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				0EEFD3DD1DFEEF56002559A4 /* libHyphenateSDK.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		0EEFD3DF1DFEEFAA002559A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EEFD3F01DFEF021002559A4 /* libsqlite3.tbd */,
+				0EEFD3EE1DFEF00F002559A4 /* libstdc++.6.0.9.tbd */,
+				0EEFD3EC1DFEEFFE002559A4 /* libc++.tbd */,
+				0EEFD3EA1DFEEFF0002559A4 /* libz.tbd */,
+				0EEFD3E81DFEEFDC002559A4 /* ImageIO.framework */,
+				0EEFD3E61DFEEFCE002559A4 /* MobileCoreServices.framework */,
+				0EEFD3E41DFEEFC0002559A4 /* AVFoundation.framework */,
+				0EEFD3E21DFEEFB7002559A4 /* AudioToolbox.framework */,
+				0EEFD3E01DFEEFAA002559A4 /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0EEFD39F1DFEEEFD002559A4 /* HuanXinDemo2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0EEFD3B71DFEEEFD002559A4 /* Build configuration list for PBXNativeTarget "HuanXinDemo2" */;
+			buildPhases = (
+				0EEFD39C1DFEEEFD002559A4 /* Sources */,
+				0EEFD39D1DFEEEFD002559A4 /* Frameworks */,
+				0EEFD39E1DFEEEFD002559A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HuanXinDemo2;
+			productName = HuanXinDemo2;
+			productReference = 0EEFD3A01DFEEEFD002559A4 /* HuanXinDemo2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EEFD3981DFEEEFD002559A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "余婷";
+				TargetAttributes = {
+					0EEFD39F1DFEEEFD002559A4 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0EEFD39B1DFEEEFD002559A4 /* Build configuration list for PBXProject "HuanXinDemo2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0EEFD3971DFEEEFD002559A4;
+			productRefGroup = 0EEFD3A11DFEEEFD002559A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0EEFD39F1DFEEEFD002559A4 /* HuanXinDemo2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0EEFD39E1DFEEEFD002559A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EEFD3B31DFEEEFD002559A4 /* LaunchScreen.storyboard in Resources */,
+				0EEFD59A1DFEFD7B002559A4 /* ConversationInfoViewController.xib in Resources */,
+				0EEFD3B01DFEEEFD002559A4 /* Assets.xcassets in Resources */,
+				0EEFD3AE1DFEEEFD002559A4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0EEFD39C1DFEEEFD002559A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EEFD5991DFEFD7B002559A4 /* ConversationInfoViewController.m in Sources */,
+				0EEFD3AB1DFEEEFD002559A4 /* ViewController.m in Sources */,
+				0EEFD5921DFEF4DD002559A4 /* UserInfoViewController.m in Sources */,
+				0EEFD3A81DFEEEFD002559A4 /* AppDelegate.m in Sources */,
+				0EEFD3A51DFEEEFD002559A4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0EEFD3AC1DFEEEFD002559A4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EEFD3AD1DFEEEFD002559A4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0EEFD3B11DFEEEFD002559A4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0EEFD3B21DFEEEFD002559A4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0EEFD3B51DFEEEFD002559A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0EEFD3B61DFEEEFD002559A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0EEFD3B81DFEEEFD002559A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = HuanXinDemo2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HyphenateSDK/lib",
+					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qianfeng.HuanXinDemo2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0EEFD3B91DFEEEFD002559A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = HuanXinDemo2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HyphenateSDK/lib",
+					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb",
+					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.qianfeng.HuanXinDemo2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EEFD39B1DFEEEFD002559A4 /* Build configuration list for PBXProject "HuanXinDemo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EEFD3B51DFEEEFD002559A4 /* Debug */,
+				0EEFD3B61DFEEEFD002559A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0EEFD3B71DFEEEFD002559A4 /* Build configuration list for PBXNativeTarget "HuanXinDemo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EEFD3B81DFEEEFD002559A4 /* Debug */,
+				0EEFD3B91DFEEEFD002559A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0EEFD3981DFEEEFD002559A4 /* Project object */;
+}
