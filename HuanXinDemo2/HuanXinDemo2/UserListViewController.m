@@ -48,7 +48,6 @@
     UIAlertAction * cancelAction = [UIAlertAction actionWithTitle:@"不同意" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
 #pragma mark -- 拒绝加好友申请
         [[EMClient sharedClient].contactManager declineInvitationForUsername:aUsername];
-        
     }];
     
     [alsertC addAction:sureAction];
@@ -60,6 +59,8 @@
 //好友申请被通过
 - (void)friendRequestDidApproveByUser:(NSString *)aUsername{
     NSLog(@"%@通过了你的好友请求",aUsername);
+    //刷新好友列表
+    [self tableViewDidTriggerHeaderRefresh];
     
 }
 
