@@ -23,6 +23,8 @@
     // Do any additional setup after loading the view from its nib.
     //注册群组回调
     [[EMClient sharedClient].groupManager addDelegate:self delegateQueue:nil];
+    
+    self.memberNumber.text = [NSString stringWithFormat:@"%d/%d",self.currentGroup.membersCount,self.currentGroup.setting.maxUsersCount];
 }
 
 #pragma mark - 回调方法

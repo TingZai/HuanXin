@@ -179,6 +179,7 @@
         
         groupChat.title = group.subject;
         groupChat.hidesBottomBarWhenPushed = YES;
+        groupChat.currentGroup = group;
         [self.navigationController pushViewController:groupChat animated:YES];
         
         return;

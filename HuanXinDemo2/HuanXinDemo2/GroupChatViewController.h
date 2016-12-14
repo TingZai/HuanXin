@@ -10,4 +10,6 @@
 
 @interface GroupChatViewController : EaseMessageViewController
 
+@property(nonatomic,strong) EMGroup * currentGroup;
+
 @end
