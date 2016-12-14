@@ -156,6 +156,8 @@
 		0EEFD7571DFFD112002559A4 /* AddConnectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD7561DFFD112002559A4 /* AddConnectionView.m */; };
 		0EEFD7591DFFD123002559A4 /* AddConnectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EEFD7581DFFD123002559A4 /* AddConnectionView.xib */; };
 		0EEFD75C1DFFF1E9002559A4 /* SingleMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD75B1DFFF1E9002559A4 /* SingleMessageViewController.m */; };
+		0EEFD7641DFFFDC4002559A4 /* FriendInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD7621DFFFDC4002559A4 /* FriendInfoViewController.m */; };
+		0EEFD7651DFFFDC4002559A4 /* FriendInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EEFD7631DFFFDC4002559A4 /* FriendInfoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -489,6 +491,9 @@
 		0EEFD7581DFFD123002559A4 /* AddConnectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddConnectionView.xib; sourceTree = "<group>"; };
 		0EEFD75A1DFFF1E9002559A4 /* SingleMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleMessageViewController.h; sourceTree = "<group>"; };
 		0EEFD75B1DFFF1E9002559A4 /* SingleMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleMessageViewController.m; sourceTree = "<group>"; };
+		0EEFD7611DFFFDC4002559A4 /* FriendInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendInfoViewController.h; sourceTree = "<group>"; };
+		0EEFD7621DFFFDC4002559A4 /* FriendInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendInfoViewController.m; sourceTree = "<group>"; };
+		0EEFD7631DFFFDC4002559A4 /* FriendInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendInfoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -536,6 +541,7 @@
 		0EEFD3A21DFEEEFD002559A4 /* HuanXinDemo2 */ = {
 			isa = PBXGroup;
 			children = (
+				0EEFD75D1DFFFCA8002559A4 /* 联系人信息编辑 */,
 				0EEFD74C1DFFC4A0002559A4 /* 联系人 */,
 				0EEFD7481DFFC3D4002559A4 /* 主页面 */,
 				0EEFD59D1DFF961F002559A4 /* 单个会话聊天页面 */,
@@ -1282,6 +1288,16 @@
 			name = "联系人";
 			sourceTree = "<group>";
 		};
+		0EEFD75D1DFFFCA8002559A4 /* 联系人信息编辑 */ = {
+			isa = PBXGroup;
+			children = (
+				0EEFD7611DFFFDC4002559A4 /* FriendInfoViewController.h */,
+				0EEFD7621DFFFDC4002559A4 /* FriendInfoViewController.m */,
+				0EEFD7631DFFFDC4002559A4 /* FriendInfoViewController.xib */,
+			);
+			name = "联系人信息编辑";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1347,6 +1363,7 @@
 				0EEFD59A1DFEFD7B002559A4 /* ConversationInfoViewController.xib in Resources */,
 				0EEFD3B01DFEEEFD002559A4 /* Assets.xcassets in Resources */,
 				0EEFD7141DFFB343002559A4 /* MWPhotoBrowser.bundle in Resources */,
+				0EEFD7651DFFFDC4002559A4 /* FriendInfoViewController.xib in Resources */,
 				0EEFD6E91DFFB343002559A4 /* MJRefresh.bundle in Resources */,
 				0EEFD7541DFFCB9E002559A4 /* ListMenuView.xib in Resources */,
 				0EEFD3AE1DFEEEFD002559A4 /* Main.storyboard in Resources */,
@@ -1448,6 +1465,7 @@
 				0EEFD7521DFFCB85002559A4 /* ListMenuView.m in Sources */,
 				0EEFD6EA1DFFB343002559A4 /* MJRefreshConst.m in Sources */,
 				0EEFD6E01DFFB343002559A4 /* MJRefreshAutoGifFooter.m in Sources */,
+				0EEFD7641DFFFDC4002559A4 /* FriendInfoViewController.m in Sources */,
 				0EEFD7231DFFB343002559A4 /* EaseEmotionEscape.m in Sources */,
 				0EEFD7381DFFB343002559A4 /* EaseBubbleView.m in Sources */,
 				0EEFD7091DFFB343002559A4 /* PSTCollectionViewCell.m in Sources */,

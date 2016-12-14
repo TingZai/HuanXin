@@ -47,6 +47,7 @@
     self.textLabel.numberOfLines = 0;
     [self.backgroundImageView addSubview:self.textLabel];
     
+    
     [self _setupTextBubbleConstraints];
 }
 
