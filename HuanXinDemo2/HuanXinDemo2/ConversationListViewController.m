@@ -14,9 +14,14 @@
 
 @implementation ConversationListViewController
 
+- (void)loadView{
+
+    [super loadView];
+    self.dataSource = self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSource = self;
+    
     self.delegate = self;
     self.title = @"消息";
     
@@ -47,6 +52,8 @@
 - (NSString *)conversationListViewController:(EaseConversationListViewController *)conversationListViewController
        latestMessageTimeForConversationModel:(id<IConversationModel>)conversationModel{
 
+    NSString * lastMessageTime = @"";
+    
     EMMessage * lastMessage = [conversationModel.conversation latestMessage];
     NSDate * lasetDate = [NSDate dateWithTimeIntervalSince1970:lastMessage.timestamp];
     
@@ -58,6 +65,19 @@
     return lastMessageTime;
 }
 
+- (id<IConversationModel>)conversationListViewController:(EaseConversationListViewController *)conversationListViewController
+                                    modelForConversation:(EMConversation *)conversation{
+    
+    EaseConversationModel * model = [[EaseConversationModel alloc] initWithConversation:conversation];
+    
+    //在这儿获取头像和昵称登信息
+//    model.title = @"昵称";
+    model.avatarImage = [UIImage imageNamed:@"avatarImage_A"];
+    
+    
+    return model;
+
+}
 
 
 

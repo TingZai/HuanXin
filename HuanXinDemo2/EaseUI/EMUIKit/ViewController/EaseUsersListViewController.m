@@ -14,10 +14,14 @@
 
 #import "UIViewController+HUD.h"
 #import "EaseMessageViewController.h"
+#import "GroupChatViewController.h"
 
 @interface EaseUsersListViewController ()
 
 @property (strong, nonatomic) UISearchBar *searchBar;
+
+//群组数据源数组
+@property (nonatomic,strong) NSMutableArray * groupDataSource;
 
 @end
 
@@ -36,13 +40,49 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self tableViewDidTriggerHeaderRefresh];
+    //更新数据
+    [self refreshTableView];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - 自己实现的部分
+- (NSMutableArray *)groupDataSource{
+
+    if (_groupDataSource == nil) {
+        
+        _groupDataSource = [NSMutableArray new];
+        
+    }
+    
+    return _groupDataSource;
 }
+- (void)getAllGroupInfo{
+
+    __weak typeof(self) weakself = self;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //获取群组
+        EMError *error = nil;
+        NSArray *groups = [[EMClient sharedClient].groupManager getMyGroupsFromServerWithError:&error];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (!error) {
+                [weakself.groupDataSource removeAllObjects];
+                [weakself.groupDataSource addObjectsFromArray:groups];
+                [weakself.tableView reloadData];
+            }
+            
+        });
+        
+        
+    });
+}
+
+- (void)refreshTableView{
+
+    [self tableViewDidTriggerHeaderRefresh];
+    [self getAllGroupInfo];
+}
+
 
 #pragma mark - setter
 
@@ -65,10 +105,10 @@
 {
     // Return the number of rows in the section.
     if (section == 0) {
-        if ([_dataSource respondsToSelector:@selector(numberOfRowInUserListViewController:)]) {
-            return [_dataSource numberOfRowInUserListViewController:self];
-        }
-        return 0;
+//        if ([_dataSource respondsToSelector:@selector(numberOfRowInUserListViewController:)]) {
+//            return [_dataSource numberOfRowInUserListViewController:self];
+//        }
+        return self.groupDataSource.count;
     }
     return [self.dataArray count];
 }
@@ -83,8 +123,26 @@
         cell = [[EaseUserCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
+    //群组
     if (indexPath.section == 0) {
-        return nil;
+        
+        UITableViewCell * cell2 = [tableView dequeueReusableCellWithIdentifier:@"cell1"];
+        if (cell2 == nil) {
+            
+            cell2 = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell1"];
+        }
+        
+        cell2.backgroundColor = [UIColor redColor];
+        
+        EMGroup * group = self.groupDataSource[indexPath.row];
+        
+        cell2.textLabel.text = group.subject;
+        cell2.imageView.image = [UIImage imageNamed:@"group"];
+        
+        return cell2;
+        
+        
+        //联系人
     } else {
         id<IUserModel> model = nil;
         if ([_dataSource respondsToSelector:@selector(userListViewController:userModelForIndexPath:)]) {
@@ -113,6 +171,23 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+    if (indexPath.section == 0) {
+        
+        EMGroup * group = self.groupDataSource[indexPath.row];
+        //群聊
+        GroupChatViewController *groupChat = [[GroupChatViewController alloc] initWithConversationChatter:group.groupId conversationType:EMConversationTypeGroupChat];
+        
+        groupChat.title = group.subject;
+        groupChat.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:groupChat animated:YES];
+        
+        return;
+        
+    }
+    
+    
+    
+    
     id<IUserModel> model = nil;
     if (_dataSource && [_dataSource respondsToSelector:@selector(userListViewController:userModelForIndexPath:)]) {
         model = [_dataSource userListViewController:self userModelForIndexPath:indexPath];
@@ -130,6 +205,22 @@
             [self.navigationController pushViewController:viewController animated:YES];
         }
     }}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+
+    return 20;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+
+    if (section == 0) {
+        
+        return @"群组";
+    }else{
+    
+        return @"联系人";
+    }
+}
 
 #pragma mark - data
 

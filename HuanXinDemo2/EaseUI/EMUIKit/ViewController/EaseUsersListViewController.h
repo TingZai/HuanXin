@@ -54,4 +54,6 @@
 
 - (void)tableViewDidTriggerHeaderRefresh;
 
+- (void)refreshTableView;
+
 @end

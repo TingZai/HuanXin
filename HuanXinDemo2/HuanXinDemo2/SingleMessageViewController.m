@@ -54,7 +54,7 @@
     
     model = [[EaseMessageModel alloc] initWithMessage:message];
     //设置默认头像
-    model.avatarImage = [UIImage imageNamed:@"avatarImage_d"];
+    model.avatarImage = [UIImage imageNamed:@"avatarImage"];
     //设置头像URL
     model.avatarURLPath = @"";
     //设置昵称

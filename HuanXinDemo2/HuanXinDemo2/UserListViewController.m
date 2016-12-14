@@ -9,16 +9,25 @@
 #import "UserListViewController.h"
 #import "ListMenuView.h"
 #import "AddConnectionView.h"
+#import "AddGrounpView.h"
+#import "CreatGrounpViewController.h"
 
 
-@interface UserListViewController ()<EMContactManagerDelegate>
+@interface UserListViewController ()<EMContactManagerDelegate,EMUserListViewControllerDataSource>
 
 @property(nonatomic,strong) ListMenuView * menuView;
 @property(nonatomic,strong) AddConnectionView * addConnectionView;
+@property(nonatomic,strong) AddGrounpView * addGrounpView;
 
 @end
 
 @implementation UserListViewController
+
+- (void)loadView{
+
+    [super loadView];
+    self.dataSource = self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,6 +38,24 @@
     [self showRefreshFooter];
     [self showRefreshHeader];
     
+    //设置文字颜色
+    [[EaseUserCell appearance] setTitleLabelColor:[UIColor greenColor]];
+    
+    //获取群主信息
+    [self getAllGrounp];
+    
+}
+
+#pragma mark - EMUserListViewControllerDataSource
+- (id<IUserModel>)userListViewController:(EaseUsersListViewController *)userListViewController
+                           modelForBuddy:(NSString *)buddy{
+
+    id<IUserModel> model = nil;
+    model = [[EaseUserModel alloc] initWithBuddy:buddy];
+    model.avatarImage = [UIImage imageNamed:@"avatarImage_A"];
+    model.avatarURLPath = @"http://img5.duitang.com/uploads/item/201410/16/20141016104649_itaAr.thumb.224_0.png";   //头像网络地址
+//    model.nickname = @""; //昵称
+    return model;
 }
 
 #pragma mark - EMContactManagerDelegate
@@ -77,6 +104,27 @@
 
 
 #pragma mark - 懒加载
+- (AddGrounpView *)addGrounpView{
+
+    if (_addGrounpView == nil) {
+        
+       _addGrounpView = [[NSBundle mainBundle] loadNibNamed:@"AddGrounpView" owner:self options:nil].lastObject;
+        
+        _addGrounpView.searchGrounp = ^(NSString * grounp){
+        
+            NSLog(@"搜索群");
+            [self creatGrounpAction];
+            [_addGrounpView removeFromSuperview];
+        };
+        _addGrounpView.creatGrounp = ^(void){
+        
+            NSLog(@"创建群");
+            [_addGrounpView removeFromSuperview];
+        };
+    }
+    
+    return _addGrounpView;
+}
 
 - (AddConnectionView *)addConnectionView{
     
@@ -127,14 +175,52 @@
         self.menuView.addGrounp = ^(void){
             
             NSLog(@"添加群组");
-            self.addConnectionView.isGrounp = YES;
-            [self.tableView addSubview:self.addConnectionView];
+            [self.tableView addSubview:self.addGrounpView];
             self.menuView.hidden = YES;
         };
     }
     
     return _menuView;
 }
+#pragma mark - 群操作  
+//获取相关的所有的群
+- (void)getAllGrounp{
+
+    //从服务器获取所有的群
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        EMError *error = nil;
+        NSArray *myGroups = [[EMClient sharedClient].groupManager getMyGroupsFromServerWithError:&error];
+        for (EMGroup * group in myGroups) {
+            NSLog(@"A:%@",group.members);
+            //获取群详情
+            EMGroup *tgroup = [[EMClient sharedClient].groupManager fetchGroupInfo:group.groupId includeMembersList:YES error:&error];
+            
+            NSLog(@"B:%@",tgroup.groupId);
+            
+        }
+        
+    });
+    
+}
+
+- (void)getGroupInfoWithId:(NSString *)groupId{
+
+    
+}
+
+//创建群
+- (void)creatGrounpAction{
+
+    CreatGrounpViewController * creatV = [[CreatGrounpViewController alloc] init];
+    creatV.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:creatV animated:YES];
+}
+
+- (void)addCrounpAction{
+
+    
+}
+
 
 #pragma mark - 添加联系人
 - (void)addFriend:(NSString *)userName{
@@ -147,6 +233,7 @@
     }];
 }
 
+#pragma mark - 添加群组
 - (void)addGroup:(NSString *)userName{
 
     

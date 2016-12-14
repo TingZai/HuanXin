@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E38DF511E00F3C600DAE0E4 /* AddGrounpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38DF501E00F3C600DAE0E4 /* AddGrounpView.m */; };
+		0E38DF531E00F3D800DAE0E4 /* AddGrounpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E38DF521E00F3D800DAE0E4 /* AddGrounpView.xib */; };
+		0E38DF6E1E0118F100DAE0E4 /* CreatGrounpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38DF6C1E0118F100DAE0E4 /* CreatGrounpViewController.m */; };
+		0E38DF6F1E0118F100DAE0E4 /* CreatGrounpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E38DF6D1E0118F100DAE0E4 /* CreatGrounpViewController.xib */; };
+		0E38DF741E01303500DAE0E4 /* GroupChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38DF731E01303500DAE0E4 /* GroupChatViewController.m */; };
+		0E38DF781E0131B300DAE0E4 /* GroupSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38DF761E0131B300DAE0E4 /* GroupSettingViewController.m */; };
+		0E38DF791E0131B300DAE0E4 /* GroupSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E38DF771E0131B300DAE0E4 /* GroupSettingViewController.xib */; };
 		0EEFD3A51DFEEEFD002559A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD3A41DFEEEFD002559A4 /* main.m */; };
 		0EEFD3A81DFEEEFD002559A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD3A71DFEEEFD002559A4 /* AppDelegate.m */; };
 		0EEFD3AB1DFEEEFD002559A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD3AA1DFEEEFD002559A4 /* ViewController.m */; };
@@ -161,6 +168,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E38DF4F1E00F3C600DAE0E4 /* AddGrounpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddGrounpView.h; sourceTree = "<group>"; };
+		0E38DF501E00F3C600DAE0E4 /* AddGrounpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddGrounpView.m; sourceTree = "<group>"; };
+		0E38DF521E00F3D800DAE0E4 /* AddGrounpView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddGrounpView.xib; sourceTree = "<group>"; };
+		0E38DF6B1E0118F100DAE0E4 /* CreatGrounpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreatGrounpViewController.h; sourceTree = "<group>"; };
+		0E38DF6C1E0118F100DAE0E4 /* CreatGrounpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreatGrounpViewController.m; sourceTree = "<group>"; };
+		0E38DF6D1E0118F100DAE0E4 /* CreatGrounpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreatGrounpViewController.xib; sourceTree = "<group>"; };
+		0E38DF721E01303500DAE0E4 /* GroupChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupChatViewController.h; sourceTree = "<group>"; };
+		0E38DF731E01303500DAE0E4 /* GroupChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupChatViewController.m; sourceTree = "<group>"; };
+		0E38DF751E0131B300DAE0E4 /* GroupSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSettingViewController.h; sourceTree = "<group>"; };
+		0E38DF761E0131B300DAE0E4 /* GroupSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSettingViewController.m; sourceTree = "<group>"; };
+		0E38DF771E0131B300DAE0E4 /* GroupSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupSettingViewController.xib; sourceTree = "<group>"; };
 		0EEFD3A01DFEEEFD002559A4 /* HuanXinDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuanXinDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEFD3A41DFEEEFD002559A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0EEFD3A61DFEEEFD002559A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -519,6 +537,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E38DF701E0118F900DAE0E4 /* 朋友 */ = {
+			isa = PBXGroup;
+			children = (
+				0EEFD7551DFFD112002559A4 /* AddConnectionView.h */,
+				0EEFD7561DFFD112002559A4 /* AddConnectionView.m */,
+				0EEFD7581DFFD123002559A4 /* AddConnectionView.xib */,
+			);
+			name = "朋友";
+			sourceTree = "<group>";
+		};
+		0E38DF711E01190C00DAE0E4 /* 群组 */ = {
+			isa = PBXGroup;
+			children = (
+				0E38DF4F1E00F3C600DAE0E4 /* AddGrounpView.h */,
+				0E38DF501E00F3C600DAE0E4 /* AddGrounpView.m */,
+				0E38DF521E00F3D800DAE0E4 /* AddGrounpView.xib */,
+				0E38DF6B1E0118F100DAE0E4 /* CreatGrounpViewController.h */,
+				0E38DF6C1E0118F100DAE0E4 /* CreatGrounpViewController.m */,
+				0E38DF6D1E0118F100DAE0E4 /* CreatGrounpViewController.xib */,
+				0E38DF721E01303500DAE0E4 /* GroupChatViewController.h */,
+				0E38DF731E01303500DAE0E4 /* GroupChatViewController.m */,
+				0E38DF751E0131B300DAE0E4 /* GroupSettingViewController.h */,
+				0E38DF761E0131B300DAE0E4 /* GroupSettingViewController.m */,
+				0E38DF771E0131B300DAE0E4 /* GroupSettingViewController.xib */,
+			);
+			name = "群组";
+			sourceTree = "<group>";
+		};
 		0EEFD3971DFEEEFD002559A4 = {
 			isa = PBXGroup;
 			children = (
@@ -1276,14 +1322,13 @@
 		0EEFD74C1DFFC4A0002559A4 /* 联系人 */ = {
 			isa = PBXGroup;
 			children = (
+				0E38DF711E01190C00DAE0E4 /* 群组 */,
+				0E38DF701E0118F900DAE0E4 /* 朋友 */,
 				0EEFD74D1DFFC512002559A4 /* UserListViewController.h */,
 				0EEFD74E1DFFC512002559A4 /* UserListViewController.m */,
 				0EEFD7501DFFCB85002559A4 /* ListMenuView.h */,
 				0EEFD7511DFFCB85002559A4 /* ListMenuView.m */,
 				0EEFD7531DFFCB9E002559A4 /* ListMenuView.xib */,
-				0EEFD7551DFFD112002559A4 /* AddConnectionView.h */,
-				0EEFD7561DFFD112002559A4 /* AddConnectionView.m */,
-				0EEFD7581DFFD123002559A4 /* AddConnectionView.xib */,
 			);
 			name = "联系人";
 			sourceTree = "<group>";
@@ -1360,7 +1405,10 @@
 				0EEFD7471DFFC19F002559A4 /* Login.storyboard in Resources */,
 				0EEFD3B31DFEEEFD002559A4 /* LaunchScreen.storyboard in Resources */,
 				0EEFD7421DFFB343002559A4 /* EaseUIResource.bundle in Resources */,
+				0E38DF6F1E0118F100DAE0E4 /* CreatGrounpViewController.xib in Resources */,
+				0E38DF791E0131B300DAE0E4 /* GroupSettingViewController.xib in Resources */,
 				0EEFD59A1DFEFD7B002559A4 /* ConversationInfoViewController.xib in Resources */,
+				0E38DF531E00F3D800DAE0E4 /* AddGrounpView.xib in Resources */,
 				0EEFD3B01DFEEEFD002559A4 /* Assets.xcassets in Resources */,
 				0EEFD7141DFFB343002559A4 /* MWPhotoBrowser.bundle in Resources */,
 				0EEFD7651DFFFDC4002559A4 /* FriendInfoViewController.xib in Resources */,
@@ -1377,6 +1425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E38DF741E01303500DAE0E4 /* GroupChatViewController.m in Sources */,
 				0EEFD71D1DFFB343002559A4 /* UIViewController+HUD.m in Sources */,
 				0EEFD6EB1DFFB343002559A4 /* UIScrollView+MJExtension.m in Sources */,
 				0EEFD7081DFFB343002559A4 /* PSTCollectionView.m in Sources */,
@@ -1417,6 +1466,7 @@
 				0EEFD7321DFFB343002559A4 /* EaseBubbleView+Gif.m in Sources */,
 				0EEFD7201DFFB343002559A4 /* EaseMessageReadManager.m in Sources */,
 				0EEFD7211DFFB343002559A4 /* EaseEmoji.m in Sources */,
+				0E38DF781E0131B300DAE0E4 /* GroupSettingViewController.m in Sources */,
 				0EEFD6DD1DFFB343002559A4 /* MJRefreshComponent.m in Sources */,
 				0EEFD74F1DFFC512002559A4 /* UserListViewController.m in Sources */,
 				0EEFD6DA1DFFB343002559A4 /* MBProgressHUD.m in Sources */,
@@ -1456,6 +1506,7 @@
 				0EEFD3A81DFEEEFD002559A4 /* AppDelegate.m in Sources */,
 				0EEFD7311DFFB343002559A4 /* EaseBubbleView+File.m in Sources */,
 				0EEFD7301DFFB343002559A4 /* EaseMessageTimeCell.m in Sources */,
+				0E38DF511E00F3C600DAE0E4 /* AddGrounpView.m in Sources */,
 				0EEFD7121DFFB343002559A4 /* PSTGridLayoutRow.m in Sources */,
 				0EEFD73B1DFFB343002559A4 /* EaseImageView.m in Sources */,
 				0EEFD70F1DFFB343002559A4 /* PSTCollectionViewUpdateItem.m in Sources */,
@@ -1493,6 +1544,7 @@
 				0EEFD7401DFFB343002559A4 /* EaseRecordView.m in Sources */,
 				0EEFD71E1DFFB343002559A4 /* EaseChineseToPinyin.m in Sources */,
 				0EEFD6F81DFFB343002559A4 /* EMSDWebImageCompat.m in Sources */,
+				0E38DF6E1E0118F100DAE0E4 /* CreatGrounpViewController.m in Sources */,
 				0EEFD7031DFFB343002559A4 /* UIImage+EMWebP.m in Sources */,
 				0EEFD7101DFFB343002559A4 /* PSTGridLayoutInfo.m in Sources */,
 				0EEFD6F41DFFB343002559A4 /* MWTapDetectingView.m in Sources */,
