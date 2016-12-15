@@ -39,7 +39,7 @@
 - (void)viewWillAppear:(BOOL)animated{
 
     [super viewWillAppear:animated];
-    [self refreshAndSortView];
+    [self tableViewDidTriggerHeaderRefresh];
 }
 
 #pragma mark - 消息回调

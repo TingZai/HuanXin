@@ -35,7 +35,7 @@
 - (IBAction)sureAction:(id)sender {
     
     NSLog(@"确定");
-//    self.creatGrounp();
+    self.creatGrounp(self.textField.text);
 }
 
 

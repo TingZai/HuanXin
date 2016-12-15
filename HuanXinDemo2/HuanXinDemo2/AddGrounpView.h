@@ -11,6 +11,6 @@
 @interface AddGrounpView : UIView
 
 @property(nonatomic,copy) void(^searchGrounp)(NSString *);
-@property(nonatomic,copy) void(^creatGrounp)(void);
+@property(nonatomic,copy) void(^creatGrounp)(NSString *);
 
 @end

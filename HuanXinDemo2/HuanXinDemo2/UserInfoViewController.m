@@ -28,6 +28,8 @@
     [self getConversation];
 }
 
+
+
 //设置导航条
 - (void)navigationBarSetting{
 

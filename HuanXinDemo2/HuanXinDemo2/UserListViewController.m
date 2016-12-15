@@ -112,13 +112,13 @@
         
         _addGrounpView.searchGrounp = ^(NSString * grounp){
         
-            NSLog(@"搜索群");
+            
             [self creatGrounpAction];
             [_addGrounpView removeFromSuperview];
         };
-        _addGrounpView.creatGrounp = ^(void){
+        _addGrounpView.creatGrounp = ^(NSString * GID){
         
-            NSLog(@"创建群");
+            [self addCrounpAction:GID];
             [_addGrounpView removeFromSuperview];
         };
     }
@@ -203,10 +203,7 @@
     
 }
 
-- (void)getGroupInfoWithId:(NSString *)groupId{
 
-    
-}
 
 //创建群
 - (void)creatGrounpAction{
@@ -216,9 +213,24 @@
     [self.navigationController pushViewController:creatV animated:YES];
 }
 
-- (void)addCrounpAction{
+- (void)addCrounpAction:(NSString*)groupId{
 
-    
+    //1.查找群
+    [[EMClient sharedClient].groupManager searchPublicGroupWithId:groupId completion:^(EMGroup *aGroup, EMError *aError) {
+        
+        //如果找到对应的群就申请加入
+        if (!aError) {
+            EMError *error = nil;
+            [[EMClient sharedClient].groupManager applyJoinPublicGroup:groupId message:@"我想加入" error:nil];
+            if (error) {
+                
+            }
+            
+        }else{
+        
+            NSLog(@"没有找到该群");
+        }
+    }];
 }
 
 

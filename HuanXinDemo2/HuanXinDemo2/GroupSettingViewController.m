@@ -97,7 +97,7 @@
 - (IBAction)addMemberAction:(id)sender {
     
     EMError *error = nil;
-    [[EMClient sharedClient].groupManager addOccupants:@[@"xiaogou",@"haha"] toGroup:@"groupId" welcomeMessage:@"message" error:&error];
+    [[EMClient sharedClient].groupManager addOccupants:@[@"xiaogou",@"haha"] toGroup:self.currentGroup.groupId welcomeMessage:@"message" error:&error];
     if (!error) {
         
         NSLog(@"邀请成功");
