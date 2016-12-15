@@ -7,6 +7,7 @@
 //
 
 #import "GroupSettingViewController.h"
+#import "YTToolManager.h"
 
 
 @interface GroupSettingViewController ()<EMGroupManagerDelegate>
@@ -36,19 +37,23 @@
     
     UIAlertAction * sureAction = [UIAlertAction actionWithTitle:@"同意" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         
-        [[EMClient sharedClient].groupManager acceptInvitationFromGroup:aGroupId inviter:aInviter completion:^(EMGroup *aGroup, EMError *aError) {
-           
-            if (!aError) {
-                
-                NSLog(@"同意进群成功");
-            }
-            
+        //同意加群申请
+        [[EMClient sharedClient].groupManager approveJoinGroupRequest:aGroupId sender:aInviter completion:^(EMGroup *aGroup, EMError *aError) {
+            NSLog(@"申请入群成功");
         }];
     }];
     
     UIAlertAction * cancelAction = [UIAlertAction actionWithTitle:@"拒绝" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
 
-        
+        //拒绝加群申请
+        [[EMClient sharedClient].groupManager declineJoinGroupRequest:aGroupId sender:aInviter reason:@"你不符合要求" completion:^(EMGroup *aGroup, EMError *aError) {
+           
+            if (!aError) {
+                
+                NSLog(@"拒绝成功");
+            }
+            
+        }];
     }];
     
     [alsertC addAction:sureAction];
@@ -82,6 +87,18 @@
                                     reason:(NSString *)aReason{
 
     NSLog(@"收到入群申请");
+    [[YTToolManager shareManager] showAlertViewWithMessage:[NSString stringWithFormat:@"%@申请加入群",aUsername] title:@"申请" sureTitle:@"同意" cancelTitle:@"不同意" inController:self sureAction:^{
+        
+        NSLog(@"同意");
+        [[EMClient sharedClient].groupManager approveJoinGroupRequest:aGroup.groupId sender:aUsername completion:^(EMGroup *aGroup, EMError *aError) {
+            NSLog(@"申请进群成功");
+        }];
+        
+    } cancelAction:^{
+       
+        NSLog(@"拒绝");
+    }];
+    
 }
 
 - (void)joinGroupRequestDidDecline:(NSString *)aGroupId

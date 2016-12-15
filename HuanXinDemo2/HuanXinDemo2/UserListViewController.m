@@ -223,7 +223,7 @@
             EMError *error = nil;
             [[EMClient sharedClient].groupManager applyJoinPublicGroup:groupId message:@"我想加入" error:nil];
             if (error) {
-                
+                NSLog(@"请求错误");
             }
             
         }else{

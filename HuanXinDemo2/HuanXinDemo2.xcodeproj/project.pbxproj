@@ -14,6 +14,7 @@
 		0E38DF741E01303500DAE0E4 /* GroupChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38DF731E01303500DAE0E4 /* GroupChatViewController.m */; };
 		0E38DF781E0131B300DAE0E4 /* GroupSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38DF761E0131B300DAE0E4 /* GroupSettingViewController.m */; };
 		0E38DF791E0131B300DAE0E4 /* GroupSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E38DF771E0131B300DAE0E4 /* GroupSettingViewController.xib */; };
+		0E9638E51E0224EE0020F8D7 /* YTToolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9638E41E0224EE0020F8D7 /* YTToolManager.m */; };
 		0EEFD3A51DFEEEFD002559A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD3A41DFEEEFD002559A4 /* main.m */; };
 		0EEFD3A81DFEEEFD002559A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD3A71DFEEEFD002559A4 /* AppDelegate.m */; };
 		0EEFD3AB1DFEEEFD002559A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EEFD3AA1DFEEEFD002559A4 /* ViewController.m */; };
@@ -179,6 +180,8 @@
 		0E38DF751E0131B300DAE0E4 /* GroupSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupSettingViewController.h; sourceTree = "<group>"; };
 		0E38DF761E0131B300DAE0E4 /* GroupSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupSettingViewController.m; sourceTree = "<group>"; };
 		0E38DF771E0131B300DAE0E4 /* GroupSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupSettingViewController.xib; sourceTree = "<group>"; };
+		0E9638E31E0224EE0020F8D7 /* YTToolManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTToolManager.h; sourceTree = "<group>"; };
+		0E9638E41E0224EE0020F8D7 /* YTToolManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTToolManager.m; sourceTree = "<group>"; };
 		0EEFD3A01DFEEEFD002559A4 /* HuanXinDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuanXinDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEFD3A41DFEEEFD002559A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0EEFD3A61DFEEEFD002559A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -563,6 +566,15 @@
 				0E38DF771E0131B300DAE0E4 /* GroupSettingViewController.xib */,
 			);
 			name = "群组";
+			sourceTree = "<group>";
+		};
+		0E9638E21E02246A0020F8D7 /* 通用 */ = {
+			isa = PBXGroup;
+			children = (
+				0E9638E31E0224EE0020F8D7 /* YTToolManager.h */,
+				0E9638E41E0224EE0020F8D7 /* YTToolManager.m */,
+			);
+			name = "通用";
 			sourceTree = "<group>";
 		};
 		0EEFD3971DFEEEFD002559A4 = {
@@ -1322,6 +1334,7 @@
 		0EEFD74C1DFFC4A0002559A4 /* 联系人 */ = {
 			isa = PBXGroup;
 			children = (
+				0E9638E21E02246A0020F8D7 /* 通用 */,
 				0E38DF711E01190C00DAE0E4 /* 群组 */,
 				0E38DF701E0118F900DAE0E4 /* 朋友 */,
 				0EEFD74D1DFFC512002559A4 /* UserListViewController.h */,
@@ -1547,6 +1560,7 @@
 				0E38DF6E1E0118F100DAE0E4 /* CreatGrounpViewController.m in Sources */,
 				0EEFD7031DFFB343002559A4 /* UIImage+EMWebP.m in Sources */,
 				0EEFD7101DFFB343002559A4 /* PSTGridLayoutInfo.m in Sources */,
+				0E9638E51E0224EE0020F8D7 /* YTToolManager.m in Sources */,
 				0EEFD6F41DFFB343002559A4 /* MWTapDetectingView.m in Sources */,
 				0EEFD74B1DFFC3ED002559A4 /* TabBarViewController.m in Sources */,
 				0EEFD71C1DFFB343002559A4 /* UIViewController+DismissKeyboard.m in Sources */,
